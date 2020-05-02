@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor_principal{
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Aquí inician los estilos de la cabecera*/
+.cabecera{
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    background: rgb(236, 164, 70);
+}
+
+header{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px 0px 0px 0px;
+}
+
+header .titulo_cabecera {
+    float: left;
+    width: 25%;
+    padding: 10px 0px;
+    font-family: 'Manrope', sans-serif;
+}
+
+header .titulo_cabecera a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav{
+    width: 75%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+header nav div ul {
+    list-style: none;   
+    display: flex; 
+    text-align: right;
+    background: red;
+}
+
+
+header nav div ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px 15px 30px;
+    color: white;
+    background: rgb(236, 164, 70);
+    font-family: 'Manrope', sans-serif;
+}
+
+header nav div ul li a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+header nav div ul li ul{
+    display: none;
+}
+
+header nav div ul li:hover ul{
+    display: block;
+    width: 100px;
+    margin-left: -8px;
+    position: absolute;
+}
+header nav div ul li:hover ul li a{    
+    padding: 14px 10px 15px 0px;
+}
+
+/*Aqui terminan los estilos de la cabecera*/
+
+/*Aquí empiezan los estilos del mensaje publicitario*/
+.publicitario{
+    clear:left;
+    width: 100%;
+    overflow: hidden;    
+    margin-top: -40px;
+    margin-bottom: 1em;
+}
+
+.publicitario .imagen_publicitaria{
+    overflow: hidden;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background-image: url(../img/img2.jpg); 
+    padding: 70px 0px 70px 0px;
+    height: 300px;
+}
+
+.publicitario .imagen_publicitaria .texto_publicidad{
+    width: 50%;
+    margin: auto;
+    font-family: 'Manrope', sans-serif;
+    color: rgb(240, 230, 230);
+    text-transform: uppercase;
+}
+
+/*Aquí terminan los estilos del mensaje publicitario*/
+
+/*Aquí empiezan los estilos del cuarpo de la pagina*/
+
+section{
+    width: 100%;
+    overflow: hidden;
+    background: #F4F4F4;
+}
+
+section .cuerpo{
+   width: 90%;
+   overflow: hidden;
+   margin: auto;
+   max-width: 1400px; 
+   padding: 40px 0px 0px 0px;
+}
+
+/*Aquí terminan los estilos del cuerpo de la pagina*/
+
+/*Aquí empiezan los estilos del pie de pagina*/
+
+footer{
+    overflow: hidden;
+    width: 100%;
+    background: rgb(43, 41, 41);
+    overflow: hidden;
+}
+
+footer .contenido_pie{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1400px;
+    font-family: 'Manrope', sans-serif;
+    color: rgb(240, 230, 230);
+    font-size: 12px;
+    padding: 20px 0px 23px 0px;
+}
+
+footer .contenido_pie div{
+   float: left;
+   width: 50%;
+}
+
+footer .contenido_pie div h2{
+    margin-bottom: 10px;
+}
+
+footer .contenido_pie .pie_right{
+    text-align: right;
+    border-left: 1px solid white;
+}
+
+footer .contenido_pie .pie_right img{
+    opacity:.5;
+    overflow: hidden;    
+}
+
+footer .contenido_pie .pie_right img:hover{
+    opacity:10;   
+    cursor: pointer;
+}
+
+footer hr{
+    clear: left;
+    padding: 10px;
+    border-style: none;
+    background: rgb(136, 135, 135);
+}
+/*Aquí terminan los estilos del pie de pagina*/
+
+.contenido_izquierda{
+    width: 75%;
+    float: left;
+    padding: 0px 20px 20px 0px;
+}
+
+.contenido_izquierda div{
+    background: white;
+    margin-bottom: 2em;
+    border: 1px solid black;
+    border-radius: 5px 5px 0px;
+}
+
+.contenido_izquierda label{
+    background: rgb(74, 75, 75);
+    width: 100%;
+    border-radius: 3px;
+    color: white;
+}
+
+.contenido_izquierda div article p{
+    padding: 20px;
+
+}
+
+.contenido_derecha{
+    width: 25%;
+    float: left;
+    padding: 0px 0px 0px 10px;
+}
+
+
+/*Estilos para el inicio de sesión */ 
+
+
+.btn{
+    width: 100%;
+    margin-top: 1em;
+    padding:12px;
+    color: white;
+    background: rgb(81, 116, 129);
+    border-radius: 5px;
+}
+
+/*Aqui terminan los estilos  para la sesión*/
+
+/*Estilos para el inicion de sesión del administrador*/
+.contenedor_registro{
+    width: 400px;
+    background: rgba(40, 177, 190, 0.5);    
+    margin: auto;
+    margin-bottom: 3em;
+    padding: 40px;
+}
+
+.centrar_registro{
+    width: 100%;
+    text-align: center;
+}
+
+.centrar_registro div {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.centrar_registro .form-group .btn{
+    width: 100%;
+    padding:12px;
+    color: white;
+    background: rgb(81, 116, 129);
+    border-radius: 0px;
+}
+/*Aqui terminan los estilos para el incio de sesión del administrador*/
+
+/*Aquí inician los estilos para la pestaña Contactanos*/
+
+:focus{
+    outline: none;
+}
+
+.form_wrap{
+    width: 90%;
+    margin: auto auto 3em auto;
+    display: flex;
+
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Informacion de Contacto*/
+
+.cantact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgba(64, 144, 236, 0.795);
+    opacity: 0.9;
+}
+
+.cantact_info{
+    width: 38%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_title, .info_items{
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background: rgba(64, 144, 236, 0);
+}
+
+.info_title {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info_title h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.info_items p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span{
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+
+/* Formulario de contacto*/
+form.form_contact{
+    width: 62%;
+    padding: 10px 40px;
+    font-family: 'Manrope', sans-serif;
+}
+
+form.form_contact h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom:30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+form.form_contact input, form.form_contact textarea{
+    width: 100%;
+    
+    margin-bottom: 10px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: 'Manrope', sans-serif;
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    height: 80px;
+}
+
+form.form_contact input[type="submit"]{
+    width: 180px;
+    background: #4091EC;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form.form_contact input[type="submit"]:hover{
+    background: #3371B6;
+}
+
+/* Ventana de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C5C5C5;
+    margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+
+    background: #E25151;
+    color: #fff;
+    border: 2px solid #B14141;
+    cursor: pointer;
+    float: right;
+}
+
+/*Aquí termina los estilos para la pestaña de contacto*/
+
