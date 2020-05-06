@@ -24,7 +24,7 @@ session_start();
 			$_SESSION['user']=$f['username'];
 			$_SESSION['rol']=$f['rol'];
 
-			header("Location:../index.php");
+			header("Location:../?p=principal");
 		}else{
 			echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
 		

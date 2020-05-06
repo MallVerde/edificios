@@ -13,7 +13,7 @@
 			<h1 style="text-align: center">Iniciar Sesión</h2>
 			<br>
 			<label for=""><h4>Nombre de usuario</h4></label>
-			<input type="text" autocomplete="off" placeholder="Usuario" name="username" id="names" required/>	
+			<input type="text" autocomplete="off" placeholder="Usuario" name="username" id="names" required onkeypress="pulsar(event)"/>	
 			<br>
 			<br>
 			<label for=""><h4>Contraseña</h4></label>

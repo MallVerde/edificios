@@ -31,9 +31,11 @@ $(document).ready(function(){
                                         '<span id="btnClose">Cerrar</span>'+
                                     '</div>'+
                                 '</div>'
-
             $('body').append(mensajeModal);
         }
+        
+
+        
 
         // CERRANDO MODAL ==============================
         $('#btnClose').click(function(){

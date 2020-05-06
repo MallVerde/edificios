@@ -1,9 +1,9 @@
 <?php
 	session_start();
 	if (@!$_SESSION['user']) {
-		header("Location:index.php");
+		header("Location:../?p=principal");
 	}elseif ($_SESSION['rol']==2) {
-		header("Location:../index.php");
+		header("Location:../?p=principal");
 	}
 ?>
 <!DOCTYPE html>

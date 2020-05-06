@@ -4,7 +4,7 @@
     $pass_mysql = "";
     $db_mysql = "edificios";
     @$mysqli = mysqli_connect($host_mysql,$user_mysql,$pass_mysql,$db_mysql) or die ("Error al conectar con la base de datos");
-
+	
 function nombre_cliente($id_cliente){
 	$mysqli = connect();
 
@@ -24,5 +24,5 @@ function connect(){
 	return $mysqli;
 }
 
-
+//prueba
 ?>
