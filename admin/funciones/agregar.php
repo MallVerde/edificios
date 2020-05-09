@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 	<meta name="author" content="Joseph Godoy">
-    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
   </head>
 <body>
 	<div class="container">
@@ -49,9 +49,8 @@
 									$id=$row[0];
 									$user=$row[1];
 									$pass=$row[2];
-									$name=$row[3];
-									$apellido=$row[4];
-									$psadmin=$row[5];
+									$name=$row[4];
+									$apellido=$row[5];
 									$psadmin=$row[6];
 								}
 							?>

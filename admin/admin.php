@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 	<meta name="author" content="Joseph Godoy">
-	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
 	<link rel="stylesheet" href="css/estilos.css?v=<?php echo time();?>">
   </head>
 <body>
@@ -64,9 +64,10 @@
 				    					echo "<td>$arreglo[0]</td>";
 				    					echo "<td>$arreglo[1]</td>";
 				    					echo "<td>$arreglo[2]</td>";
-				    					echo "<td>$arreglo[3]</td>";
-										echo "<td>$arreglo[4]</td>";
+				    					echo "<td>$arreglo[4]</td>";
 										echo "<td>$arreglo[5]</td>";
+										echo "<td>$arreglo[6]</td>";
+										
 				    					echo "<td><a href='funciones/actualizar.php?id=$arreglo[0]'><img src='../img/actualizar.png' style='width:30px; class='img-rounded'></td>";
 										echo "<td><a href='admin.php?id=$arreglo[0]&idborrar=2 '><img src='../img/eliminar.png' class='img-rounded' style='width:30px;'/></a></td>";							
 										echo "</tr>";

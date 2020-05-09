@@ -1,6 +1,6 @@
 
 <?php
-session_start();
+	session_start();	
 	require("../configs/funciones.php");
 	$username=$_POST['username'];
 	$pass=$_POST['password'];

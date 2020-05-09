@@ -1,3 +1,9 @@
+<?php
+	if(isset($_SESSION['id_cliente'])){
+		header ("Location:?p=principal");
+	}
+?>
+
 <section class="form_wrap">
 	<section class="cantact_info">
         <section class="info_title">
