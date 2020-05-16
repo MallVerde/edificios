@@ -1,9 +1,7 @@
 $(document).ready(function(){
 
     $('#btnSend').click(function(){
-
         var errores = '';
-
         // Validado Nombre ==============================
         if( $('#names').val() == '' ){
             errores += '<p>Escriba un nombre de usuario</p>';
@@ -20,8 +18,6 @@ $(document).ready(function(){
             $('#password').css("border-bottom-color", "#d1d1d1")
         }
 
-
-
         // ENVIANDO MENSAJE ============================
         if( errores == '' == false){
             var mensajeModal = '<div class="modal_wrap">'+
@@ -33,10 +29,7 @@ $(document).ready(function(){
                                 '</div>'
             $('body').append(mensajeModal);
         }
-        
-
-        
-
+    
         // CERRANDO MODAL ==============================
         $('#btnClose').click(function(){
             $('.modal_wrap').remove();

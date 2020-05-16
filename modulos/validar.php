@@ -4,7 +4,7 @@
 	require("../configs/funciones.php");
 	$username=$_POST['username'];
 	$pass=$_POST['password'];
-	//la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
+	
 	$sql2=mysqli_query($mysqli,"SELECT * FROM inquilino WHERE username='$username'");
 	if($f2=mysqli_fetch_assoc($sql2)){
 		if($pass==$f2['pasadmin']){
@@ -31,11 +31,8 @@
 			echo "<script>location.href='../?p=login'</script>";
 		}
 	}else{
-		
-		echo '<script>alert("ESTE USUARIO NO EXISTE, PORFAVOR REGISTRESE SUS DATOS CORRECTAMENTE")</script> ';
-		
+		echo '<script>alert("ESTE USUARIO NO EXISTE, PORFAVOR INGRESE SUS DATOS CORRECTAMENTE")</script> ';
 		echo "<script>location.href='../?p=login'</script>";	
-
 	}
 
 ?>

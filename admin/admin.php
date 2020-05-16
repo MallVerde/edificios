@@ -28,6 +28,7 @@
 					<ul class="nav pull-right">
 					<li><a href="">Bienvenido <strong><?php echo $_SESSION['user'];?></strong> </a></li>
 					<li><a href="funciones/agregar.php"> Agregar Usuario</a></li>	
+					<li><a href="galeria/bannerlist.php"> Galeria</a></li>	
 					<li><a href="funciones/salir_admin.php"> Cerrar Cesión </a></li>	
 					</ul>
 				</div>
@@ -73,12 +74,12 @@
 										echo "</tr>";
 									}
 									echo "</table>";
+									
 									extract($_GET);
 									if(@$idborrar==2){
 										$sqlborrar="DELETE FROM inquilino WHERE id_inquilino=$id";
 										$resborrar=mysqli_query($mysqli,$sqlborrar);
 										echo '<script>alert("REGISTRO ELIMINADO")</script> ';
-										//header('Location: proyectos.php');
 										echo "<script>location.href='admin.php'</script>";
 									}
 								?>

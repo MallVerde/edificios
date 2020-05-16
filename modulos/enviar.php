@@ -11,7 +11,7 @@
     $asunto = "Contacto desde nuestra web";
 
     $carta = "De: $nombre \n";
-    $carta .= "Corre: $correo \n";
+    $carta .= "Correo: $correo \n";
     $carta .= "Telefono: $telefono \n";
     $carta .= "Mensaje: $mensaje";
 

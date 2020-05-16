@@ -28,6 +28,7 @@
 						<ul class="nav pull-right">
 							<li><a href="">Bienvenido <strong><?php echo $_SESSION['user'];?></strong> </a></li>
 							<li><a href="agregar.php"> Agregar Usuario</a></li>	
+							<li><a href="../galeria/bannerlist.php"> Galeria</a></li>	
 							<li><a href="salir_admin.php"> Cerrar Cesión </a></li>			 
 						</ul>
 					</div>

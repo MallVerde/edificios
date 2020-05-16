@@ -14,13 +14,13 @@
         <h1 style="text-align: center">Envía un mensaje</h1>
         <div class="user_info">
             <label for="names">Nombres *</label>
-            <input type="text" id="names" name="nombre" required autocomplete="off">
+            <input type="text" id="names" name="nombre" required autocomplete="off" maxlength="45">
 
             <label for="phone">Telefono / Celular</label>
-            <input type="text" id="phone" name="telefono" autocomplete="off">
+            <input type="text" id="phone" name="telefono" autocomplete="off" maxlength="10" onkeypress="return soloNumeros(event);">
 
             <label for="email">Correo electrónico *</label>
-            <input type="text" id="email" name="correo" required autocomplete="off">
+            <input type="email" id="email" name="correo" required autocomplete="off" maxlength="45">
 
             <label for="mensaje">Mensaje *</label>
             <textarea id="mensaje" name="mensaje" required></textarea>
@@ -30,3 +30,4 @@
     </form>
     <script src="js/contacto.js"></script>
 </section>
+

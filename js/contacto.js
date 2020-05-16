@@ -1,9 +1,11 @@
+
+
 $(document).ready(function(){
 
     $('#btnSend').click(function(){
 
         var errores = '';
-
+    
         // Validado Nombre ==============================
         if( $('#names').val() == '' ){
             errores += '<p>Escriba un nombre</p>';
@@ -47,3 +49,15 @@ $(document).ready(function(){
         });
     });
 });
+
+function soloNumeros(e)
+    {
+        // capturamos la tecla pulsada
+        var teclaPulsada=window.event ? window.event.keyCode:e.which;
+ 
+        // capturamos el contenido del input
+        var valor=document.getElementById("phone").value;
+ 
+        // devolvemos true o false dependiendo de si es numerico o no
+        return /\d/.test(String.fromCharCode(teclaPulsada));
+    }
