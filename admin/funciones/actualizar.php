@@ -54,6 +54,8 @@
 									$name=$row[4];
 									$apellido=$row[5];
 									$psadmin=$row[6];
+									$cuarto=$row[8];
+									$monto=$row[9];
 								}
 							?>
 							<form action="ejecutar_actualizar.php" method="post">
@@ -64,10 +66,15 @@
 								Nick Name
 								<br>
 								<input type="text" name="user" value="<?php echo $user?>" autocomplete="off">
-								<br>
-								Contraseña
-								<br>
-								<input type="text" name="pass" value="<?php echo $pass?>" autocomplete="off">
+								<?php if (isset($pass)){
+									echo "
+										<br>
+										Contraseña
+										<br>
+										<input type='text' name='pass' value='$pass' autocomplete='off'>
+										";
+									}
+								 ?>
 								<br>
 								Nombre de usuario
 								<br> 
@@ -76,11 +83,34 @@
 								Apellidos
 								<br>
 								<input type="text" name="apellido" value="<?php echo $apellido?>" autocomplete="off">
-								<br>
-								Contraseña administrador
-								<br>
-								<input type="text" name="psadmin" value="<?php echo $psadmin?>" autocomplete="off"><br>
-								<br>
+								<?php if (isset($cuarto)){
+									echo "
+										<br>
+										Num. Departamento
+										<br>
+										<input type='text' name='cuarto' value='$cuarto' autocomplete='off'>
+										";
+									}
+								 ?>
+								<?php if (isset($psadmin)){
+									echo "
+										<br>
+										Contraseña administrador
+										<br>
+										<input type='text' name='psadmin' value='$psadmin' autocomplete='off'>
+										";
+									}
+								 ?>
+								<?php if (isset($monto)){
+									echo "
+										<br>
+										Monto De Pago
+										<br>
+										<input type='number' name='monto' value='$monto' autocomplete='off'>
+										";
+									}
+								 ?>
+								 <br>
 								<input type="submit" value="Guardar" class="btn btn-success btn-primary">
 							</form>
 						</div>	
@@ -88,9 +118,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
 		<footer class="footer">
 			<hr class="soften"/>
 			<p>&copy; Copyright Equipo Prieto, Zepahua & Bulbarela<br/><br/></p>

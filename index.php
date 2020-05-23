@@ -38,7 +38,7 @@ if (!isset($p)) {
     <title>Edificios Castro</title>
 </head>
 
-<body>
+<body style="background: #F4F4F4;">
     <div class="contenedor_principal">
         <div class="cabecera">
             <header>
@@ -87,7 +87,8 @@ if (!isset($p)) {
                 ?>
             </div>
         </section>
-        <footer>
+    </div>
+    <footer>
             <div class="contenido_pie">
                 <div class="pie_left">
                     <h5>
@@ -105,11 +106,7 @@ if (!isset($p)) {
                 </div>
             </div>
         </footer>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-
 </body>
-
 </html>

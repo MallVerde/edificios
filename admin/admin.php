@@ -55,6 +55,8 @@
 									echo "<td>Nombre</td>";
 									echo "<td>Apellidos</td>";
 									echo "<td>Password Admin";
+									echo "<td>Num. Departamento</td>";
+									echo "<td>Monto De Pago</td>";
 									echo "<td>Editar</td>";
 									echo "<td>Borrar</td>";
 									echo "</tr>";			    
@@ -68,6 +70,8 @@
 				    					echo "<td>$arreglo[4]</td>";
 										echo "<td>$arreglo[5]</td>";
 										echo "<td>$arreglo[6]</td>";
+										echo "<td>$arreglo[8]</td>";
+										echo "<td>$arreglo[9]</td>";
 										
 				    					echo "<td><a href='funciones/actualizar.php?id=$arreglo[0]'><img src='../img/actualizar.png' style='width:30px; class='img-rounded'></td>";
 										echo "<td><a href='admin.php?id=$arreglo[0]&idborrar=2 '><img src='../img/eliminar.png' class='img-rounded' style='width:30px;'/></a></td>";							
@@ -101,7 +105,7 @@
 									echo "<tr class='warning'>";
 									echo "<td>Id_pago</td>";
 									echo "<td>Id_inquilino</td>";
-									echo "<td>Id_cuarto</td>";
+									echo "<td>Monto De Pago</td>";
 									echo "<td>Estado</td>";
 									echo "<td>Fecha</td>";
 									echo "</tr>";			    
@@ -110,10 +114,11 @@
 				 					while($arreglo=mysqli_fetch_array($query)){
 				  						echo "<tr class='success'>";
 				    					echo "<td>$arreglo[0]</td>";
-				    					echo "<td>$arreglo[1]</td>";
+										echo "<td>$arreglo[1]</td>";
+										echo "<td>$arreglo[4]</td>";
 				    					echo "<td>$arreglo[2]</td>";
 				    					echo "<td>$arreglo[3]</td>";
-										echo "<td>$arreglo[4]</td>";
+										
 										echo "</tr>";
 									}
 									echo "</table>";

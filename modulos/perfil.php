@@ -24,6 +24,9 @@
 										<img  id="imagen_perfil" class="img-responsive" src="<?php echo $row['logo_url']; ?>" alt="imagen_perfil">
 									</div>
 									<br>
+									<br>
+									<br>
+									<br>
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group">
@@ -53,10 +56,19 @@
 												<td>Apellidos</td>
 												<td><?php echo $row['apellidos'] ?></td>
 											</tr>
+											<tr>
+												<td>Num. Departamento</td>
+												<td><?php echo $row['cuarto'] ?></td>
+											</tr>
+											<tr>
+												<td>Monto de pago</td>
+												<td><?php echo $row['monto']?> $</td>
+											</tr>
 										</tbody>
 									</table>
-									<div style="margin-top: 38px;">
-										<a href="#"><button type="button" class="btn btn-primary">Realizar pago</button></a>
+									<div style="margin-top: 25px;">
+										<a href="?p=pago"><button type="button" class="btn btn-primary">Realizar pago</button></a>
+										<a href="?p=historial_pagos"><button type="button" class="btn btn-primary">Historial de pagos</button></a>
 									</div>			
 								</div>
 							</div>						
@@ -92,3 +104,4 @@
 		}
 	</script>
 	<br>
+</div>

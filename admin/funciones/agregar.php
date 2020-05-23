@@ -41,41 +41,35 @@
 					<h2> Administración de usuarios registrados</h2>	
 					<div class="well well-small">
 						<h4>Agregar Usuarios</h4>
-						<div class="row-fluid">
-						<?php
-								require("../../configs/funciones.php");
-								$sql="SELECT * FROM inquilino";
-								$ressql=mysqli_query($mysqli,$sql);
-								while ($row=mysqli_fetch_row ($ressql)){
-									$id=$row[0];
-									$user=$row[1];
-									$pass=$row[2];
-									$name=$row[4];
-									$apellido=$row[5];
-									$psadmin=$row[6];
-								}
-							?>
-
+						<div class="row-fluid">				
 							<form action="ejecutar_agregar.php" method="post">																
 								Id
 								<br>
-								<input type="text" name="id" >
+								<input type="text" name="id" required autocomplete="off">
 								<br>
 								Nick Name
 								<br>
-								<input type="text" name="user" >
+								<input type="text" name="user" required autocomplete="off">
 								<br>
 								Contraseña
 								<br>
-								<input type="text" name="pass">
+								<input type="text" name="pass" required autocomplete="off">
 								<br>
 								Nombre de usuario
 								<br> 
-								<input type="text" name="name">
+								<input type="text" name="name" required autocomplete="off">
 								<br>
 								Apellidos
 								<br>
-                                <input type="text" name="apellido">
+                                <input type="text" name="apellido" required autocomplete="off">
+								<br>
+								Num. Departamento
+								<br>
+								<input type="text" name="cuarto" required autocomplete="off">
+								<br>
+								Monto de pago
+								<br>
+								<input type="number" name="monto" required autocomplete="off">
 								<br>
 								<input type="submit" value="Guardar" class="btn btn-success btn-primary">
 							</form>
